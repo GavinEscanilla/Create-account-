@@ -2,7 +2,6 @@ body{
     
     margin: 0;
     padding: 0;
-    align-items: center;
 }
 
 
@@ -17,10 +16,8 @@ body{
 #border{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
     height: 100vh;
+    align-items: center;
 }
 #name-container{
     display: block;
@@ -29,3 +26,6 @@ body{
     font-size: 30px;
     color: green;
 }
+
+
+
