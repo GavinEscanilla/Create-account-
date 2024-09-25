@@ -23,7 +23,7 @@ body{
     height: 100vh;
 }
 #name-container{
-    display: flex;
+    display: block;
 }
 .fa-check{
     font-size: 30px;
