@@ -30,6 +30,12 @@ if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($("#email").val())){
    $("#email-container > .fa-check").remove();
    $("#email-container").addClass('animate__animated animate__shakeX');
          }
+         if(/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{12,}$/.test($("#password").val())){
+            if($('#characters > .fa-check').length === 0){
+               $('#characters').append(check);
+               $('#characters > .fa-check').addClass('animate__animated animate__fadeIn ');
+         }
+         }
       });
    });
 

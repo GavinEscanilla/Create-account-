@@ -20,7 +20,7 @@ href="styles.css"
     <div class="modal-body">
         <div class="container-fluid">
     <div class="row" id="border">
-<div id="form" class="col-xl-4 h-75 mx-auto">
+<div id="form" class="col-xl-4  mx-auto">
     <h1 id="title">Create an account</h1>
 <label>Username</label>
 <div id="name-container" >
@@ -30,7 +30,20 @@ href="styles.css"
 <div id="email-container">
     <input type="email" id="email" class="col-xl-12" placeholder="JohnDoe@gmail.com"/>
 </div>
+<div id="password-container">
+    <label>enter a password</label>
+    <input type="password" id="password" class="col-xl-12"/>
+    <ul class="list-group">
+        <li class="list-group-item" id="characters">12 to 14 characters or more </li>
+        <li class="list-group-item" id="uppercase">at least 1 uppercase</li>
+        <li class="list-group-item" id="lowercase">at leasr 1 lowercase</li>
+        <li class="list-group-item" id="number">at least 1 number</li>
+        <li class="list-group-item" id="symbol">at least 1 symbol</li>
+      </ul>
+</div>
+<div id="newpassword">
 
+</div>
 <button class="btn btn-block btn-primary col-xl-3 mx-auto
 " id="submit">create Account</button>
 </div>
