@@ -24,6 +24,13 @@ body{
     font-size: 30px;
     color: green;
 }
-
+#txt{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 50px;
+    height: 400px;
+}
 
 

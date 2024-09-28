@@ -1,6 +1,6 @@
 $(document).ready(function(){
- $("#form").addClass('animate__animated animate__bounce');
  $('#submit').click(function(){
+   const txt ='<h1 class=".txt mx-auto">Congratulations on creating an account</h1>';
     const alert1 = "<div class=\'alert alert-danger\' id=\"alert1\" role=\"alert\">Type name between 6-18 characters</div>";
     const alert2 = "<div class=\'alert alert-danger\' id=\"alert2\" role=\"alert\">Type in a valid email</div>";
     const alert3 = "<div class=\'alert alert-danger\' id=\"alert3\" role=\"alert\">PassWord must have a minimum of 12-14 characters</div>";
@@ -104,6 +104,18 @@ if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($("#email").val())){
          }
          $("#number > .fa-check").remove();
          $("#number").addClass('animate__animated animate__shakeX');
+        }
+        if($("#name-container .fa-check").length > 0 &&
+        $("#email-container .fa-check").length > 0 &&
+        $("#characters .fa-check").length > 0 &&
+        $("#uppercase .fa-check").length > 0 &&
+        $("#lowercase .fa-check").length > 0 &&
+        $("#symbol .fa-check").length > 0 &&
+        $("#number .fa-check").length > 0) {
+        
+        $("#form").addClass('animate__animated animate__flip');
+               $("#form").html(txt);
+               
         }
       });
    });
